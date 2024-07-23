@@ -1,40 +1,75 @@
-# list operations
-# declaring the list 
+# to add element at the end of array 
 
-lst = ["hello",68239,646.737,True]
-print(lst)
-print(type(lst))
+input = ["hello",1,15.23,True]
+input.append("welcome")
+print(input)
 
-# taking lst values using index 
+# to insert the element at given location
 
-lst = [1,2,3,4,5,6,7,8,9,0]
-lst1 = lst[4]
-lst2 = lst[3]
-lst3 = lst[2]
-lst4 = lst[-1]
-print(lst1,lst2,lst3,lst4)
+input = ["hello",63,66.32,True]
+input.insert(1,26)
+print(input)
 
-# list inside a list 
+# to check the sizes of 2 lists
 
-lst =[1,2,3,[4,5,6]]
-result1 = lst[3]
-result2 = lst[3][0]
-print(result1,result2)
+lst1 = [10,20,30,40,90]
+lst2 = [50,60,70,80]
 
-# inserting value in list 
+if len(lst1) == len(lst2):
+    print("the sizes of 2 lists are same")
+else:
+    print("the sizes of the lists are not same")
 
-lst = [1,2,3,4,5,6]
-lst.insert(3,9)
-print(lst)
+# to create a python list in all possible ways
 
-lst.insert(-1,66)
+# 1 declaring dirctly 
+lst = ["fruits",100,28.4,True]
 print(lst)
 
-# appending values in the list
+# 2 by using the split option
 
-lst = ["apple","orange","banana","pineapple"]
-lst.append("grapes")
-print(lst)
+lst = "10,20,30,40,50"
+result = lst.split()
+print(result)
 
-lst.append("watermelon")
-print(lst)
+# to access the elements in the nested list
+
+input_lst = [10,20,30,[40,50,60,[70,80,90]]]
+
+result1 = input_lst[0]
+result2 = input_lst[3]
+result3 = input_lst[3][0]
+result4 = input_lst[3][3]
+result5 = input_lst[3][3][0]
+result6 = input_lst[3][3][2]
+print(result1)
+print(result2)
+print(result3)
+print(result4)
+print(result5)
+print(result6)
+
+# to reverse a list in possible ways
+
+# using slice we can reverse the list
+
+input_lst = [10,20,30,40,50]
+result = input_lst[::-1]
+print(result)
+
+# using reverse keyword 
+
+input= ["apple","banana","pine apple","grapes"]
+input.reverse()
+print(input)
+
+# sum of elements in the list
+
+input_items = [10,20,30,40,50]
+sum_of_items = 0
+
+for total in input_items:
+    sum_of_items += total
+    
+print(sum_of_items)
+
