@@ -1,7 +1,7 @@
 # to check the occurance of a character in a string
 
 input_string = input("enter a string")
-char_count = {}
+char_count = []
 repeated_chars = []
 for char in input_string:
     if char in char_count:
