@@ -1,4 +1,4 @@
-# to print the n integral number with theur square form in the dictionary form
+ # to print the n integral number with theur square form in the dictionary form
 
 input_dic = eval(input("enter your n value :"))
 output_dic={}
